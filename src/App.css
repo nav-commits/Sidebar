@@ -1,0 +1,10 @@
+.App {
+    width: 90vw;
+    height: 100vh;
+    background-color: white;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
