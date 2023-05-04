@@ -20,7 +20,7 @@ function Accordion({ data, handleToggle, clicked }) {
                             }}
                             onClick={() => handleToggle(idx)}
                         >
-                            <span style={{ color: 'rgb(0, 127, 255)' }}>
+                            <span style={{ color: 'black' }}>
                                 {navItem.mainLabel.icon}
                             </span>
                             <p className='list-item' style={{ color: 'black', gap: 10 }}>
@@ -30,7 +30,7 @@ function Accordion({ data, handleToggle, clicked }) {
                             {clicked === idx ? (
                                 <span
                                     style={{
-                                        color: 'rgb(0, 127, 255)',
+                                        color: 'rgb(216, 225, 142)',
                                         marginLeft: 'auto',
                                         marginRight: '5px',
                                     }}
@@ -40,7 +40,7 @@ function Accordion({ data, handleToggle, clicked }) {
                             ) : (
                                 <span
                                     style={{
-                                        color: 'rgb(0, 127, 255)',
+                                        color: 'rgb(216, 225, 142)',
                                         marginLeft: ' auto ',
                                         marginRight: '5px',
                                     }}
@@ -50,46 +50,48 @@ function Accordion({ data, handleToggle, clicked }) {
                             )}
                         </li>
                         {/* inner list */}
-                            <ul className={clicked === idx ? 'content show' : 'content'} style={{ listStyle: 'none', color: 'black' }}>
-                                {navItem.mainLabel.subTitle?.map((name, id) => (
-                                    <React.Fragment key={id}>
-                                        <li className='sub-list-main-title' key={id}>
-                                            {name.name}
-                                        </li>
+                        <ul
+                            className={clicked === idx ? 'content show' : 'content'}
+                            style={{ listStyle: 'none', color: 'black' }}
+                        >
+                            {navItem.mainLabel.subTitle?.map((name, id) => (
+                                <React.Fragment key={id}>
+                                    <li className='sub-list-main-title' key={id}>
+                                        {name.name}
+                                    </li>
 
-                                        <ul
-                                            style={{
-                                                listStyle: 'none',
-                                                marginLeft: -40,
-                                                color: 'black',
-                                            }}
-                                        >
-                                            {name.links.map((link, id) => (
-                                                <div
-                                                    key={id}
-                                                    style={{
-                                                        listStyle: 'none',
-                                                        paddingTop: 10,
-                                                    }}
-                                                >
-                                                    <li className='link-item'>
-                                                        <Link
-                                                            style={{
-                                                                textDecoration: 'none',
-                                                                color: 'black',
-                                                            }}
-                                                            to={link}
-                                                        >
-                                                            {link}
-                                                        </Link>
-                                                    </li>
-                                                </div>
-                                            ))}
-                                        </ul>
-                                    </React.Fragment>
-                                ))}
-                            </ul>
-                        
+                                    <ul
+                                        style={{
+                                            listStyle: 'none',
+                                            marginLeft: -40,
+                                            color: 'black',
+                                        }}
+                                    >
+                                        {name.links.map((link, id) => (
+                                            <div
+                                                key={id}
+                                                style={{
+                                                    listStyle: 'none',
+                                                    paddingTop: 10,
+                                                }}
+                                            >
+                                                <li className='link-item'>
+                                                    <Link
+                                                        style={{
+                                                            textDecoration: 'none',
+                                                            color: 'black',
+                                                        }}
+                                                        to={link}
+                                                    >
+                                                        {link}
+                                                    </Link>
+                                                </li>
+                                            </div>
+                                        ))}
+                                    </ul>
+                                </React.Fragment>
+                            ))}
+                        </ul>
                     </React.Fragment>
                 ))}
             </ul>
