@@ -1,7 +1,7 @@
 .Sidebar {
     height: 100%;
     width: 280px;
-    background-color: white;
+    background-color: rgb(242, 245, 221);
     margin-top: 0;
     color: white;
     border-right: 1px solid rgb(231, 235, 240);
@@ -12,17 +12,16 @@
     transition: transform 0.3s ease-in-out;
 }
 
-.SidebarDesktop{
+.SidebarDesktop {
     height: 100%;
     width: 280px;
-    background-color: white;
+    background-color: rgb(242, 245, 221);
     margin-top: 0;
     color: white;
     border-right: 1px solid rgb(231, 235, 240);
     z-index: 300;
     position: fixed;
 }
-
 
 .Sidebar.open {
     transform: translateX(0);

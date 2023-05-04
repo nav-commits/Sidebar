@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import '../Accordian/Accordian.css';
 import React from 'react';
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
@@ -28,7 +27,7 @@ function Accordion({ data, handleToggle, clicked }) {
                             {clicked === idx ? (
                                 <span
                                     style={{
-                                        color: 'rgb(216, 225, 142)',
+                                        color: 'black',
                                         marginLeft: 'auto',
                                         marginRight: '5px',
                                     }}
@@ -38,7 +37,7 @@ function Accordion({ data, handleToggle, clicked }) {
                             ) : (
                                 <span
                                     style={{
-                                        color: 'rgb(216, 225, 142)',
+                                        color: 'black',
                                         marginLeft: ' auto ',
                                         marginRight: '5px',
                                     }}
