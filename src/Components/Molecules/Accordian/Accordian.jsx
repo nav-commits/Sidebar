@@ -20,9 +20,7 @@ function Accordion({ data, handleToggle, clicked }) {
                             }}
                             onClick={() => handleToggle(idx)}
                         >
-                            <span style={{ color: 'black' }}>
-                                {navItem.mainLabel.icon}
-                            </span>
+                            <span style={{ color: 'black' }}>{navItem.mainLabel.icon}</span>
                             <p className='list-item' style={{ color: 'black', gap: 10 }}>
                                 {navItem.mainLabel.mainLabelName}
                             </p>
@@ -75,16 +73,15 @@ function Accordion({ data, handleToggle, clicked }) {
                                                     paddingTop: 10,
                                                 }}
                                             >
-                                                <li className='link-item'>
-                                                    <Link
-                                                        style={{
-                                                            textDecoration: 'none',
-                                                            color: 'black',
-                                                        }}
-                                                        to={link}
-                                                    >
-                                                        {link}
-                                                    </Link>
+                                                <li
+                                                    className='link-item'
+                                                    style={{
+                                                        textDecoration: 'none',
+                                                        color: 'black',
+                                                        cursor: 'pointer',
+                                                    }}
+                                                >
+                                                    {link}
                                                 </li>
                                             </div>
                                         ))}
