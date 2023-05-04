@@ -4,6 +4,7 @@ import ArticleIcon from '@mui/icons-material/Article';
 import ToggleOffIcon from '@mui/icons-material/ToggleOff';
 import VisibilityIcon from '@mui/icons-material/Visibility';
 import AddCircleIcon from '@mui/icons-material/AddCircle';
+import ScienceIcon from '@mui/icons-material/Science';
 
 export const sideBarData = [
     {
@@ -86,7 +87,7 @@ export const sideBarData = [
         id: 6,
         mainLabel: {
             mainLabelName: 'Experimental APIs',
-            icon: <CodeIcon fontSize='small' />,
+            icon: <ScienceIcon fontSize='small' />,
             subTitle: [
                 {
                     links: ['API design', 'Routing', 'Testing'],
