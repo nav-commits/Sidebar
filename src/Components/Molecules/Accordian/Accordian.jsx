@@ -20,7 +20,7 @@ function Accordion({ data, handleToggle, clicked }) {
                             }}
                             onClick={() => handleToggle(idx)}
                         >
-                            <span style={{ color: 'rgb(216, 225, 142)' }}>
+                            <span style={{ color: 'black' }}>
                                 {navItem.mainLabel.icon}
                             </span>
                             <p className='list-item' style={{ color: 'black', gap: 10 }}>

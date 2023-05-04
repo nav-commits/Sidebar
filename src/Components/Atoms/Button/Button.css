@@ -4,17 +4,17 @@
     height: 34px;
     width: 40px;
     border: 1px solid rgb(224, 227, 231);
-    color: rgb(216, 225, 142);
+    color: black;
     border-radius: 10px;
     margin-left: 30px;
     margin-top: 20px;
 }
- .button{
+.button {
     display: none;
-  }
+}
 
 @media (min-width: 200px) and (max-width: 1020px) {
-  .button{
-    display: block;
-  }
+    .button {
+        display: block;
+    }
 }

@@ -26,17 +26,22 @@ function SideBarPage() {
     const closeBackDropHandler = () => {
         setSideBarOpen(false);
     };
-    
+
     let backDrop;
     if (sideBarOpen) {
         backDrop = <BackDrop closeBackDropHandler={closeBackDropHandler} />;
-    } else if (isDesktopOrLaptop) {
-       <SideBar data={sideBarData} handleToggle={handleToggle} clicked={clicked} />;
     }
+
     return (
         <React.Fragment>
             <Button icon={<MenuIcon />} onClick={sideBarToggleHandler} />
-            <SideBar data={sideBarData} show={sideBarOpen} handleToggle={handleToggle} clicked={clicked} />;
+            <SideBar
+                showDesktopAndTablet={isDesktopOrLaptop}
+                data={sideBarData}
+                show={sideBarOpen}
+                handleToggle={handleToggle}
+                clicked={clicked}
+            />
             {backDrop}
         </React.Fragment>
     );
