@@ -1,6 +1,6 @@
 import '../Sidebar/Sidebar.css';
 import React from 'react';
-import Accordion from '../../Molecules/Accordian/Accordian';
+import Accordion from '../../Molecules/Accordion/Accordion';
 
 function SideBar({ data, handleToggle, clicked, show, showDesktopAndTablet }) {
     let sideBarSlide = ['Sidebar'];

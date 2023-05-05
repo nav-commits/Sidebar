@@ -1,4 +1,4 @@
-import '../Accordian/Accordian.css';
+import '../Accordion/Accordion.css';
 import React from 'react';
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
